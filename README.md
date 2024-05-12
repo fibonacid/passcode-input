@@ -502,4 +502,4 @@ function OTPInput() {
 ## Conslusions
 
 In this article i have left out aspects of the behavior that are subjective.
-For a full review of the code refer to the github repository.
+For a full review of the code refer to the [github repository](https://github.com/fibonacid/passcode-input).
