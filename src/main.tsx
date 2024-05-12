@@ -5,7 +5,7 @@ import { PassCode, PassCodeInput } from "../lib/main";
 ReactDOM.createRoot(document.getElementById("app")!).render(
   <React.StrictMode>
     <PassCode style={{}}>
-      {Array.from({ length: 4 }).map((_, index) => (
+      {Array.from({ length: 10 }).map((_, index) => (
         <PassCodeInput
           key={index}
           style={{
@@ -13,9 +13,21 @@ ReactDOM.createRoot(document.getElementById("app")!).render(
             height: "1em",
             margin: "0.25em",
             fontSize: "1.5em",
+            textAlign: "center",
           }}
         />
       ))}
     </PassCode>
   </React.StrictMode>
 );
+
+function OTPInput() {
+  return (
+    <PassCode>
+      <PassCode.Input />
+      <PassCode.Input />
+      <PassCode.Input />
+      <PassCode.Input />
+    </PassCode>
+  );
+}

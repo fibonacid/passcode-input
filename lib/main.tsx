@@ -166,7 +166,6 @@ export function PassCodeInput({
     <input
       className={className}
       maxLength={1}
-      autoComplete="off"
       autoCapitalize="off"
       autoCorrect="off"
       spellCheck={false}
